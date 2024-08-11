@@ -56,7 +56,6 @@
   <!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 
 <body class="home light-skin">
@@ -1481,13 +1480,13 @@
                 <div class="contacts-form scrolla-element-anim-1 scroll-animate" data-animate="active">
                   <div class="bg-img" style="background-image: url(assets/images/pat-1.png);"></div>
                   <div class="contacts-form">
-                    <form id="cform" method="post">
+                    <form id="form" method="post" action="https://formsubmit.co/e73744ea759abc49b8bd437fdfe6e277" target="_blank">
                       <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                           <div class="group">
                             <label>
                               Your Full Name <b>*</b>
-                              <input type="text" name="name" >
+                              <input type="text" name="name" required>
                             </label>
                           </div>
                         </div>
@@ -1495,7 +1494,7 @@
                           <div class="group">
                             <label>
                               Your Email Address <b>*</b>
-                              <input type="email" name="email" >
+                              <input type="email" name="email" required>
                             </label>
                           </div>
                         </div>
@@ -1503,7 +1502,7 @@
                           <div class="group">
                             <label>
                               Your Subject <b>*</b>
-                              <input type="text" name="subject" >
+                              <input type="text" name="subject" required>
                             </label>
                           </div>
                         </div>
@@ -1511,15 +1510,16 @@
                           <div class="group">
                             <label>
                               Your Message <b>*</b>
-                              <textarea name="message"></textarea>
+                              <input type="text" name="message" required>
                             </label>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
                           <div class="terms-label">*By submitting you agree to our Privacy Policies.</div>
-                          <a href="#contact-section" class="btn" onclick="$('#cform').submit(); return true;">
-                            <span>Not Working Yet. Send Mail.</span>
-                          </a>
+                          <div>
+                            <button type="reset" class="btn"><span>Reset Form</span></button>
+                            <button type="submit" class="btn"><span>Send Mail</span></button>  
+                          </div>
                         </div>
                       </div>
                     </form>
